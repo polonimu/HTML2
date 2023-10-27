@@ -11,16 +11,25 @@ main
     margin-left: 100px;
 }
 
-.parent
-{
-    border-radius: 100%;
-    border-bottom-right-radius: 50%;
-    background-color: aquamarine;
-}
-
 .child
 {
-    
+    position: relative;
+    right: 0px;
+    bottom: 0;
+    background-color: antiquewhite;
+    width: 75px;
+    height: 75px;
+    border-top-left-radius: 9999px;
+}
+
+.parent
+{
+    position:relative;
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+    margin-top: 60px;
+    border-radius: 9999px;
 }
 
 h1{
@@ -34,6 +43,27 @@ h1{
     zoom: 40%;
 }
  .image{
-
+    height: 100%;
+    width: 100%;
+    background-color: silver;
+ }
+ .gallery{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    grid-row: repeat(4,400px);
+    gap:20px;
+    margin-top: 30px;
+ }
+ 
+ .row{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 20px;
+ }
+ .button{
+    display:grid;
+    gap: 20px;
 
  }
