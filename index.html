@@ -8,24 +8,30 @@
         <link rel="stylesheet" href="style.css">
         <script>
             function setname(){
-                
+                document.getElementById("name").innerHTML=document.getElementById("nameinput").value;
+
+            }
+            function setimg(){
+                document.getElementById("pfp").style.backgroundImage= "url(" + document.getElementById("setpfp").value + ")";
+
+
             }
         </script>
     </head>
         <body>
             <main>
-                <div class="parent">
+                <div id ="pfp" class="parent">
                     <div class="child" ></div>
                 </div>
                     <div class="row">
-                        <h1>Polonimu's Profile</h1>
+                        <h1 id="name">Polonimu's Profile</h1>
                     </div>
                 <div class="button">
                     <div></div>
                     <label>Set name</label>
-                    <input type="text"><button>Set</button>
+                    <input type="text" id="nameinput"><button onclick="setname()">Set</button>
                     <label>Set Profile Picture</label>
-                    <input type="text"><button>Set</button>
+                    <input id="setpfp" type="text"><button onclick="setimg()">Set</button>
                 </div>
                 <div class="gallary">
                     <div class="image"></div>
