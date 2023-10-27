@@ -8,18 +8,19 @@ main
     width: 1024px;
     min-height: 100vh;
     border: 2px black;
-    margin: 5px;
+    margin-left: 100px;
 }
 
 .parent
 {
-    width: 600px;
-    min-height: 50vh;
+    border-radius: 100%;
+    border-bottom-right-radius: 50%;
+    background-color: aquamarine;
 }
 
 .child
 {
-    width: 50%;
+    
 }
 
 h1{
@@ -32,3 +33,7 @@ h1{
     border-radius: 100%;
     zoom: 40%;
 }
+ .image{
+
+
+ }
