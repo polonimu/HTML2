@@ -1,4 +1,34 @@
 body
 {
-    background-color: antiquewhite;
+    background-color: aliceblue;
+    /*background-repeat: repeat-x;*/
+}
+main
+{
+    width: 1024px;
+    min-height: 100vh;
+    border: 2px black;
+    margin: 5px;
+}
+
+.parent
+{
+    width: 600px;
+    min-height: 50vh;
+}
+
+.child
+{
+    width: 50%;
+}
+
+h1{
+    font-style: italic;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.round{
+    border-radius: 100%;
+    zoom: 40%;
 }
